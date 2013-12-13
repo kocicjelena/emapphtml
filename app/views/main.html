@@ -1,0 +1,37 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="/person">person</a></li>
+  </ul>
+  <h3 class="text-muted">emisiayoapp</h3>
+<form>
+					<h1>person: </h1><span>	</span>
+					<h2><input type="text" id="name" ng-model="person.name" placeholder="Name"></h2>
+<h2><input type="address" id="address" ng-model="person.address" placeholder="address"></h2>
+<button ng-click="reset()">RESET</button>
+        <button ng-click="update(person)">SAVE</button>
+
+
+ <pre>form = {{person | json}}</pre>
+      <pre>contact = {{contact | json}}</pre>
+	  <h2><input type="text" id="name" ng-model="person.city" placeholder="Name"></h2>
+			 
+				<input type="submit" ng-click="updatecontact(contact)" class="btn btn-primary" value="Add">	
+				   <pre>user = {{user | json}}</pre>
+				
+			    <h2><input type="city" id="city" value="{{linkuser()}}"></h2><br/>
+				<input type="submit" ng-click="linkuser(user)" class="btn btn-primary" value="Add">	
+				   <pre>user = {{user | json}}</pre>
+</form>
+
+      <person></person>
+
+    <hr>
+  
+</div>
+
+   
+<div class="footer">
+  <p>♥ from the Yeoman team</p>
+</div>
